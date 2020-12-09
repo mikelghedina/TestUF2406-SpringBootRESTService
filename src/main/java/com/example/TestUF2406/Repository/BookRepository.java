@@ -1,0 +1,11 @@
+package com.example.TestUF2406.Repository;
+
+import com.example.TestUF2406.Model.Book;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface BookRepository extends CrudRepository<Book, Long> {
+
+
+}
