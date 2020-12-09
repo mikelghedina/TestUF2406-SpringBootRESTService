@@ -1,4 +1,4 @@
-package com.example.TestUF2406.Controller;
+package com.example.TestUF2406.RestController;
 
 
 import com.example.TestUF2406.Model.Book;
@@ -10,7 +10,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
-public class BookController {
+public class BookRestController {
 
     @Autowired
     BookService bookService;
