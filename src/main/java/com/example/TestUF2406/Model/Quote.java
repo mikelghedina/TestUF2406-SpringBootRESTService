@@ -24,7 +24,7 @@ public class Quote {
     private int numberWords;
 
     @ManyToOne
-    @JoinColumn(name = "book_id")
+    @JoinColumn(name = "book_id", nullable=true)
     private Book book;
 
 }

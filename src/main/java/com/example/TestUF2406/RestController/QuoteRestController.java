@@ -31,7 +31,7 @@ public class QuoteRestController {
         return quoteService.addQuote(quote);
     }
 
-    @RequestMapping("/quotes{id}")
+    @DeleteMapping("/quotes{id}")
     public void deleteQuoteById(@PathVariable Long id){
         quoteService.deleteQuoteById(id);
 
