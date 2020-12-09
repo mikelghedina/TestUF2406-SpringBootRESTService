@@ -1,6 +1,7 @@
 package com.example.TestUF2406.Model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -22,6 +23,7 @@ public class Book {
     private String title;
 
     @OneToMany(mappedBy = "book")
+    @JsonIgnore
     private List<Quote> quotes;
 
 }
